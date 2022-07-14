@@ -12,14 +12,14 @@ body:
     attributes:
       label: 어떤 문제가 발생하나요?
       description: 어떤 문제가 발생하는지 *자세히* 설명해주세요.
-      placeholder: (예) 계정이 수정되지 않아요.
+      placeholder: (예) 버전을 확인할 수 없어요.
     validations:
       required: true
   - type: input
     id: content
     attributes:
       label: 어떤곳에서 문제가 발생하나요?
-      description: 설정->계정 수정 과같이 설명해주세요!
+      placeholder: (예) 설정 -> 키위 버전
     validations:
       required: true
   - type: dropdown
