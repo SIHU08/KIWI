@@ -1,0 +1,33 @@
+name: 버그 신고
+description: 키위에 문제(버그)를 신고합니다.
+title: "(이곳에 문제를 한줄로 요약하여 적어주세요)"
+labels: ["버그"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        문제를 신고해주셔서 감사합니다. 아래에 
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 어떤 문제가 발생하나요?
+      description: 어떤 문제가 발생하는지 *자세히* 설명해주세요.
+      placeholder: (예) 계정이 수정되지 않아요.
+    validations:
+      required: true
+  - type: input
+    id: content
+    attributes:
+      label: 어떤곳에서 문제가 발생하나요?
+      description: `설정->계정 수정`과같이 설명해주세요!
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 어떤 브라우저로 앱을 설치하셨나요?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - 이외
