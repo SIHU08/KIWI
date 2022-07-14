@@ -1,0 +1,18 @@
+name: Regist issue
+on:
+  issues:
+    types: [opened]
+jobs:
+  regist:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Get source
+        uses: actions/checkout@v2
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            문제가 신고됐어요. 빨리 확인하고 처리해드릴테니 조금만 기다려주세요! :smiley:
