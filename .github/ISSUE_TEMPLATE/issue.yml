@@ -33,5 +33,5 @@ body:
         - Safari
         - Microsoft Edge
         - 이외
-      validations:
-        required: true
+    validations:
+      required: true
