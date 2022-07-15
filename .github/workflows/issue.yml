@@ -15,4 +15,9 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            문제가 신고됐어요. 빨리 확인하고 처리해드릴테니 조금만 기다려주세요! :smiley:
+            어떤 문제인지 확인중이에요. 확인되면 알려드릴게요!
+      - name: Add Labels
+        uses: christianvuerings/add-labels@v1.1
+        with:
+          # Labels to add
+          labels: 확인중
